@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROW Permit - LASIMRA</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                            <img src="../image/logo.png" alt="LASIMRA Logo" class="logo-main" >
+                    </a>
+                </div>
+
+                <nav class="nav-menu">
+                    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    
+                    <ul class="nav-list" id="navList">
+                        <li><a href="../index.html" class="nav-link">Home</a></li>
+                        <li><a href="../about.html" class="nav-link">About Us</a></li>
+                        <li class="dropdown">
+                            <a href="" class="nav-link drop-btn active">
+                                Application Process <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a href="fiber-row.html" class="nav-link">Fiber-ROW Permit</a>
+                                <a href="gas-row.html">Gas-ROW Permit</a>
+                                <a href="power-row.html">Power-ROW Permit</a>
+                                <a href="tower&mast.html">Tower & Mast Permit</a>
+                            </div>
+                        </li>
+                        <li><a href="../resources.html" class="nav-link">Resources</a></li>
+                        <li><a href="../media.html" class="nav-link">Media Centre</a></li>
+                        <li><a href="../contact.html" class="nav-link">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Fiber-ROW Permit</h1>
+            <div class="breadcrumb">
+                <a href="index.html"></a>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+    <!-- Process Details -->
+     <section class="fibre-row-requirements">
+  <div class="containerr">
+
+    <header class="section-headerr">
+      <h1>Fibre-ROW Permit Requirements</h1>
+      <p>
+        Follow the steps below to apply for a Right-of-Way (ROW) permit for fibre optic infrastructure in Lagos State.
+      </p>
+    </header>
+
+    <div class="requirements-block">
+      <h2>Requirements for Permit</h2>
+      <ul class="checklistr">
+        <li>Application letter (routes, diagram, distance)</li>
+        <li>List of all proposed routes</li>
+        <li>Site assessment report</li>
+        <li>Occupational Health & Safety plan</li>
+        <li>Proof of application payment</li>
+      </ul>
+    </div>
+
+    <div class="fees-block">
+      <h2>Permit Fees</h2>
+      <table class="fees-table">
+        <thead>
+          <tr>
+            <th>Activity</th>
+            <th>Amount (₦)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Application Fee</td>
+            <td>50,000.00</td>
+          </tr>
+          <tr>
+            <td>Optic Fibre Cable</td>
+            <td>1,500.00 per metre</td>
+          </tr>
+          <tr>
+            <td>Administrative & Project Management</td>
+            <td>15% of permit fees</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="reinstatement-block">
+      <h2>Reinstatement Rates</h2>
+      <table class="fees-table">
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Amount (₦/m)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Asphalt</td>
+            <td>14,000.00</td>
+          </tr>
+          <tr>
+            <td>Concrete</td>
+            <td>12,000.00</td>
+          </tr>
+          <tr>
+            <td>Lawn</td>
+            <td>5,000.00</td>
+          </tr>
+          <tr>
+            <td>Paving Stone</td>
+            <td>10,000.00</td>
+          </tr>
+          <tr>
+            <td>Integrity Test</td>
+            <td>NIL</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+  </div>
+</section>
+
+    <!-- Permits Issued Table -->
+<section class="permits-page">
+  <div class="container">
+    <header class="page-headerp">
+      <h1>Permits Issued – Right of Way (Fibre)</h1>
+      <p>List of currently issued permits for utility infrastructure using Right of Way.</p>
+      
+      <div class="search-bar">
+        <input
+          type="text"
+          id="permitSearch"
+          placeholder="Search by company, location or date..."
+          onkeyup="filterPermits()"
+        />
+      </div>
+    </header>
+
+    <div class="table-wrapper">
+      <table id="permitsTable">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Company</th>
+            <th>Site Address</th>
+            <th>Type</th>
+            <th>Height / Distance</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>16 Jan 2024</td>
+            <td>MainOne Cable Co. Ltd</td>
+            <td>Ikosi Road, Oregun & Imam Dauda Street, Surulere</td>
+            <td>Fibre</td>
+            <td>389.4</td>
+          </tr>
+          <tr>
+            <td>16 Jan 2024</td>
+            <td>MainOne Cable Co. Ltd</td>
+            <td>Marina Way (Inner) Lagos to Eleganza Building.</td>
+            <td>Fibre</td>
+            <td>112.4</td>
+          </tr>
+          <tr>
+            <td>16 Mar 2024</td>
+            <td>MainOne Cable Co. Ltd</td>
+            <td>(1). Alade Avenue off Obafemi Awolowo Way, Ikeja (2). Kudirat Abiola Way, Ikeja (3). Sanusi Fafunwa, Victoria Island</td>
+            <td>Fibre</td>
+            <td>295.5</td>
+          </tr>
+          <tr>
+            <td>6 Mar 2024</td>
+            <td>MainOne Cable Co. Ltd</td>
+            <td>Ahmadu Bello Way, Eko Atlantic City Gate 1 and 2.</td>
+            <td>Fibre</td>
+            <td>61.9</td>
+          </tr>
+          <tr>
+            <td>6 Mar 2024</td>
+            <td>MainOne Cable Co. Ltd</td>
+            <td>(1). Hakeem Dickson, Lekki  Phase 1 (2).Olu Hollow Way, Ikoyi</td>
+            <td>Fibre</td>
+            <td>41</td>
+          </tr>
+          <tr>
+            <td>16 Apr 2024</td>
+            <td>AFDC AND COMPANY LIMITED</td>
+            <td>Fatai Oduniyi Street Igbogbo
+ Oreyo Off Bola Ahmed Tinubu Way Ikorodu
+Ahmed Tinubu Way, Ikorodu
+Bakare Off Igbogbo, Ikorodu
+Abibat Omo Kade Street, Ikorodu
+Awolowo Road Eruwen (Grammar School)
+ Shagamu Road Ikorodu
+Egbe Road by Ayodele Kasirim Street Ikorodu
+Lateef Jakande (Opp Chicken Republic to CIPM Avenue Ashabi Cole)
+Kudirat Abiola Way Ikeja
+Opebi Link Bridge (Christland School)  
+Maryland, Ikorodu Road, Opp. Zenith Bank to Amowo Street Ojota.
+Ogudu Road to Buham Abass Ogudu
+Bariga Road Abule – Okuta
+Herbert- Macaulay, Unilag Road – Yaba
+Oshodi – Egba Road, Agege
+College Road Ojodu, Lagos
+Igando – Ojo bus stop to Ejire Bello Igando
+3, Akinlola Osun Street to 112a Isuti Road, Eyan Igando
+Billing Way, Oregun, Ikeja
+LASU to LASU Along Kabiru Junction</td>
+            <td>Fibre</td>
+            <td>20,009.40</td>
+          </tr>
+          <tr>
+            <td>21 May 2024</td>
+            <td>MainOne Cable Co. Ltd</td>
+            <td>Aina Street, Isheri Road, Ikeja. Lagos
+20, Cathonic Mission Street, Marina, Lagos.</td>
+            <td>Fibre</td>
+            <td>210.2</td>
+          </tr>
+          <tr>
+            <td>21 May 2024</td>
+            <td>MainOne Cable Co. Ltd</td>
+            <td>Aboyade Close Victoria Island
+Ozumba Mbadiwe Victoria Island
+Yusuf Abiodun Oniru Victoria Island
+Palm Spring Off Lekki Epe  Expressway Victoria Island
+Ojulari Crescent Victoria Island Onriu
+Kusenla Road Oniru Victoria Island</td>
+            <td>Fibre</td>
+            <td>2426.2</td>
+          </tr>
+          <tr>
+            <td>2 Jul 2024</td>
+            <td>MainOne Cable Co. Ltd</td>
+            <td>Akinwunmi Street, ALagomeji, Yaba
+Micheal Otedola Street, Ikeja
+104, Awolowo Way, Ikeja, Opp. Access Bank
+Assbifi Street, Elephant House, Ikeja
+Muri Okunola, Victoria Island, Lagos
+Tiamiyu Savage, Victoria Island, Lagos
+Bishop Kale Close, Victoria Island, Lagos
+Sumbo Jibowu  Street, Awolowo Road, Lagos</td>
+            <td>Fibre</td>
+            <td>839.6</td>
+          </tr>
+          <tr>
+            <td>7 Jul 2024</td>
+            <td>MainOne Cable Co. Ltd</td>
+            <td>Plot 1B, Block 129 Jide Sawyer Drive, Lekki Phase 1
+15, The Providence Street, Lekki Phase 1
+6-8, General Ogbemudia, Lekki Phase 1
+1 Ikoyi Crescent, Ikoyi
+Plot 22, Idowu Taylor Street, Victoria Island
+FRSC Ojodu Berger
+5a, Oduduwa Crescent, Ikeja GRA</td>
+            <td>Fibre</td>
+            <td>813.9</td>
+          </tr>
+          <tr>
+            <td>7 Jul 2024</td>
+            <td>FIBERONE</td>
+            <td>1 Ayanboye Street, Thomas Laniyan Street, Ikorodu/Osusun, Mobolaji Bank Anthony Way, Ikeja
+2 Mattoris Mall by Adekunle Lawal road, Oba Adeyinka Oyekan Avenue, Lugard Avenue junction, Ikoyi, Eti-Osa.
+3 Lugard Avenue junction by Oba Adeyinka Avenue, 2B Lugard Avenue, Ikoyi, Eti- Osa.</td>
+            <td>Fibre</td>
+            <td>1648           700           1000</td>
+          </tr>
+          <tr>
+            <td>12 Aug 2024</td>
+            <td>MainOne Cable Co. Ltd</td>
+            <td>Kosebinu Street, Oregun, Ikeja Lagos
+Aromire Avenue Off Avenue off Adeniyi Jones, Ikeja
+Senator Victor Oyofo Close  Lekki Epe Expressway Chisco Bus Stop by Enyo Petrol Station Lekki
+Itapeju Street Off Kofo Abayomi Street, Apapa Lagos</td>
+            <td>Fibre</td>
+            <td>353.4</td>
+          </tr>
+          <tr>
+            <td>12 Aug 2024</td>
+            <td>Global Independent Connect Ltd</td>
+            <td>Various Location</td>
+            <td>Fibre</td>
+            <td>2,643,000</td>
+          </tr>
+          <tr>
+            <td>5 Sep 2024</td>
+            <td>MainOne Cable Co. Ltd</td>
+            <td>Hinderer Road Apapa, G.R.A
+Yaba Technology Maingate, Shomolu
+Admiralty Way, Lekki
+Akin Adeshola Victoria Island </td>
+            <td>Fibre</td>
+            <td>186.2</td>
+          </tr>
+          <tr>
+            <td>3 Oct 2024</td>
+            <td>MainOne Cable Co. Ltd</td>
+            <td>Ayo Babatunde Crescent, Maroko, Lekki
+Hakeem Dickson Lekki, Phase 1
+Raymond Njoku Street, Ikoyi, Lagos
+Akingbade Close Off Muri Okunola
+Nnamdi Azikiwe Street, Lagos Island</td>
+            <td>Fibre</td>
+            <td>1,155.70</td>
+          </tr>
+          <tr>
+            <td>3 Oct 2024</td>
+            <td>MainOne Cable Co. Ltd</td>
+            <td>Ade Dosunmu Avenue Off Central Avenue, Apapa, Lagos.</td>
+            <td>Fibre</td>
+            <td>130</td>
+          </tr>
+          <tr>
+            <td>3 Oct 2024</td>
+            <td>MainOne Cable Co. Ltd</td>
+            <td>Onilegbale Street,
+Glover Road </td>
+            <td>Fibre</td>
+            <td>420.4</td>
+          </tr>
+          <tr>
+            <td>3 Oct 2024</td>
+            <td>FIBERONE BROADBAND LIMITED</td>
+            <td>Yusuf Close
+Sadiku Street
+Alhaji Kareem Ogunbeye Street
+Amara-Olu Street
+Bayo Ajayi Street</td>
+            <td>Fibre</td>
+            <td>1,143.60</td>
+          </tr>
+          <tr>
+            <td>3 Oct 2024</td>
+            <td>MainOne Cable Co. Ltd</td>
+            <td>Sobo Arobiodu Street, GRA Ikeja
+Kuramo Waters Close, Victoria Island
+Osborne Road Ikoyi</td>
+            <td>Fibre</td>
+            <td>347.9</td>
+          </tr>
+          <tr>
+            <td>27 Nov 2024</td>
+            <td>TOTIMAS INTEGRATED SERVICES LTD</td>
+            <td>Onilegbale Streetlay 4” pipes at Lagoon District, Freedom way, Lekki Phase 1 Lekki—Exxon Moxel, Ocean Island, Blue bay, Periwinkle Lagoon and Waterfront, Orange Island, Ostar, Prestigious Brain and Hammers, Lagoon Offshore, RKK, Sunset Lagos</td>
+            <td>Fibre</td>
+            <td>34,000</td>
+          </tr>
+          <tr>
+            <td>3 Dec 2024</td>
+            <td>FIBERONE BROADBAND LIMITED</td>
+            <td>LASIMRA/COMMDF.4/32
+LASIMRA/COMMDF.4/59
+LASIMRA/COMMDF.4/56
+LASIMRA/COMMDF.4/17
+LASIMRA/COMMDF.4/56
+LASIMRA/COMMDF.4/47</td>
+            <td>Fibre</td>
+            <td>1,143.60</td>
+          </tr>
+          <tr>
+            <td>3 Oct 2024</td>
+            <td>SPECTRANET LIMITED</td>
+            <td>Spectranet Office Ikeja to Daystar Church, Zaitech Road
+Reeve Road to Glover Road Ikoyi</td>
+            <td>Fibre</td>
+            <td>2,058</td>
+          </tr>
+
+        
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        
+                            <img src="/image/logo.png" alt="LASIMRA Logo" class="logo-main" >
+                        
+                        <div class="logo-text">
+                            <span class="logo-sub">Lagos State Infrastructure Maintenance Regulatory Agency</span>
+                        </div>
+                    </div>
+                    <!-- <p class="footer-description">
+                        Regulating utility infrastructure for sustainable development and public safety in Lagos State.
+                    </p> -->
+                    <!-- <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div> -->
+                </div>
+                
+                <!-- <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="application-process/index.html"><i class="fas fa-chevron-right"></i> Application Process</a></li>
+                        <li><a href="resources.html"><i class="fas fa-chevron-right"></i> Resources</a></li>
+                        <li><a href="media.html"><i class="fas fa-chevron-right"></i> Media Centre</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                    </ul>
+                </div> -->
+                
+                <!-- <div class="footer-col">
+                    <h3>Permit Types</h3>
+                    <ul>
+                        <li><a href="application-process/row.html"><i class="fas fa-chevron-right"></i> ROW Permit</a></li>
+                        <li><a href="application-process/mast.html"><i class="fas fa-chevron-right"></i> Mast Permit</a></li>
+                        <li><a href="application-process/tower.html"><i class="fas fa-chevron-right"></i> Tower Permit</a></li>
+                        <li><a href="resources.html"><i class="fas fa-chevron-right"></i> Forms & Guidelines</a></li>
+                        <li><a href="resources.html"><i class="fas fa-chevron-right"></i> Compliance Rules</a></li>
+                        <li><a href="resources.html"><i class="fas fa-chevron-right"></i> FAQs</a></li>
+                    </ul>
+                </div> -->
+                <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Phone Number</strong>
+                                <p>08000LASIMRA</p>
+                                <p>0800 527 4672</p>
+                            </div>
+                        </div>
+                <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Head Office</strong>
+                                <p>2, Yusuf Close, Off Hakeem Balogun St, Agidingbi, Ikeja</p>
+                            </div>
+                        </div>
+                <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <p>info@lasimra.gov.ng</p>
+                                <p>support@lasimra.gov.ng</p>
+                            </div>    
+                        
+                        
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; <span id="currentYear"></span> Lagos State Infrastructure Maintenance Regulatory Agency (LASIMRA). All rights reserved.</p>
+                </div>
+                <!-- <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Accessibility</a>
+                    <a href="#">Sitemap</a>
+                </div> -->
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="js/whatsapp.js"></script>
+</body>
+</html>

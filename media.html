@@ -3,16 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media Centre - LASIMRA</title>
+    <title>LASIMRA - Lagos State Infrastructure Maintenance Regulatory Agency</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="image/fav.png" type="image/x-icon">
 </head>
 <body>
-    <!-- WhatsApp Widget -->
-    <div class="whatsapp-widget" id="whatsappWidget">
-        <!-- Copy from index.html -->
-    </div>
 
     <!-- Navigation -->
     <!-- Header & Navigation -->
@@ -41,9 +39,10 @@
                                 Application Process <i class="fas fa-chevron-down"></i>
                             </a>
                             <div class="dropdown-menu">
-                                <a href="application-process/row.html"> ROW Permit</a>
-                                <a href="application-process/mast.html">Mast Permit</a>
-                                <a href="application-process/tower.html">Tower Permit</a>
+                                <a href="application-process/fiber-row.html" class="nav-link">Fiber-ROW Permit</a>
+                                <a href="application-process/gas-row.html">Gas-ROW Permit</a>
+                                <a href="application-process/power-row.html">Power-ROW Permit</a>
+                                <a href="application-process/tower&mast.html">Tower & Mast Permit</a>
                             </div>
                         </li>
                         <li><a href="resources.html" class="nav-link">Resources</a></li>
@@ -67,80 +66,111 @@
         </div>
     </section>
 
-    <!-- Featured TIRS Content -->
-    <section class="media-section">
+    <section class="news-page">
         <div class="container">
-            <div class="section-header">
-                <h2>TIRS Launch Coverage</h2>
-                <p class="section-subtitle">Media updates about our upcoming digital transformation</p>
-            </div>
-            
-            <div class="featured-media">
-                <div class="media-card large">
-                    <div class="media-date">
-                        <span class="date">15 Jan 2025</span>
-                        <span class="category">Press Release</span>
-                    </div>
-                    <h3>TIRS Platform Enters Final Testing Phase</h3>
-                    <p>The Telecommunication Infrastructure Regulatory System has completed development and entered user acceptance testing with stakeholders across Lagos State.</p>
-                    <a href="#" class="btn btn-primary">
-                        <i class="fas fa-newspaper"></i> Read More
-                    </a>
-                </div>
-                
-                <div class="media-grid">
-                    <div class="media-card">
-                        <div class="media-date">
-                            <span class="date">10 Dec 2024</span>
-                            <span class="category">Event</span>
-                        </div>
-                        <h4>Stakeholder Engagement Workshop</h4>
-                        <p>Successful workshop held with telecom operators to demonstrate TIRS capabilities.</p>
-                    </div>
-                    
-                    <div class="media-card">
-                        <div class="media-date">
-                            <span class="date">05 Nov 2024</span>
-                            <span class="category">Video</span>
-                        </div>
-                        <h4>TIRS Platform Preview</h4>
-                        <p>Exclusive first look at the TIRS interface and features.</p>
-                        <a href="#" class="btn-text">
-                            <i class="fas fa-play-circle"></i> Watch Video
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
+            <header class="section-header">
+            <h1>In The News</h1>
+      <p>Latest media coverage, LASIMRA press, and infrastructure updates.</p>
+    </header>
+    <div id="newsList" class="news-grid">
+      <article class="news-item">
+        <img src="/image/network.jpg"  alt="Telecom infrastructure regulatory system launch" class="news-img" />
+        <div class="news-content">
+          <h2 class="news-title">Telecommunications Infrastructure Regulatory System (TIRS) to Launch in 2026</h2>
+          <p class="news-meta">Nov 3, 2025 | Starconnect Media</p>
+          <p class="news-summary">
+            LASIMRA announced the launch of the Telecommunication Infrastructure Regulatory System (TIRS), designed to streamline permits and enhance oversight within Lagos State.</p> 
+          </p>
+          <a href="#" class="news-link">Read Full Story</a>
+        </div>
+      </article>
+
+      <article class="news-item">
+        <img src="/image/tower.jpg" alt="Lagos begins enumeration of telecom masts" class="news-img" />
+        <div class="news-content">
+          <h2 class="news-title">Lagos Begins Enumeration of Telecoms Masts</h2>
+          <p class="news-meta">Oct 29, 2025 | The Guardian</p>
+          <p class="news-summary">
+            Lagos State will enumerate all communications masts and towers to update its infrastructure database and improve safety across the state.</p>   
+          <a href="#" class="news-link">Read Full Story</a>
+        </div>
+      </article>
+
+      
+</section>
+
+
+
+<!-- <section class="media-gallery">
+  <div class="container">
+
+    <header class="gallery-header">
+      <h1>LASIMRA in the News & Events</h1>
+      <p>Highlights from recent initiatives, press coverage, and regulatory activities.</p>
+    </header>
+
+    <div class="gallery-grid">
+
+      
+      <figure class="gallery-card">
+        <a href="https://nairametrics.com/2025/01/28/lasimra-to-embark-on-enumeration-of-communication-towers-and-masts-in-lagos-amid-safety-concerns/">
+          <img src="img/mast-enumeration-1.jpg" alt="LASIMRA Mast Enumeration Initiative" />
+        </a>
+        <figcaption>
+          <a href="https://nairametrics.com/2025/01/28/lasimra-to-embark-on-enumeration-of-communication-towers-and-masts-in-lagos-amid-safety-concerns/">
+            LASIMRA Begins Mast & Tower Enumeration in Lagos
+          </a>
+        </figcaption>
+      </figure>
+
+      
+      <figure class="gallery-card">
+        <a href="https://pmnewsnigeria.com/2025/11/03/lagos-to-launch-telecommunication-infrastructure-regulatory-system/">
+          <img src="img/tirs-launch.jpg" alt="TIRS Regulatory System Launch" />
+        </a>
+        <figcaption>
+          <a href="https://pmnewsnigeria.com/2025/11/03/lagos-to-launch-telecommunication-infrastructure-regulatory-system/">
+            Telecommunication Infrastructure Regulatory System (TIRS) Announcement
+          </a>
+        </figcaption>
+      </figure>
+
+    </div>
+
+  </div>
+</section> -->
+
+
+
+
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
                     <div class="footer-logo">
-                        <div class="logo-icon">
+                        
                             <img src="image/logo.png" alt="LASIMRA Logo" class="logo-main" >
-                        </div>
+                        
                         <div class="logo-text">
                             <span class="logo-sub">Lagos State Infrastructure Maintenance Regulatory Agency</span>
                         </div>
                     </div>
-                    <p class="footer-description">
+                    <!-- <p class="footer-description">
                         Regulating utility infrastructure for sustainable development and public safety in Lagos State.
-                    </p>
-                    <div class="social-links">
+                    </p> -->
+                    <!-- <div class="social-links">
                         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                         <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                         <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                         <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                    </div>
+                    </div> -->
                 </div>
                 
-                <div class="footer-col">
+                <!-- <div class="footer-col">
                     <h3>Quick Links</h3>
                     <ul>
                         <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
@@ -150,9 +180,9 @@
                         <li><a href="media.html"><i class="fas fa-chevron-right"></i> Media Centre</a></li>
                         <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
                     </ul>
-                </div>
+                </div> -->
                 
-                <div class="footer-col">
+                <!-- <div class="footer-col">
                     <h3>Permit Types</h3>
                     <ul>
                         <li><a href="application-process/row.html"><i class="fas fa-chevron-right"></i> ROW Permit</a></li>
@@ -162,40 +192,32 @@
                         <li><a href="resources.html"><i class="fas fa-chevron-right"></i> Compliance Rules</a></li>
                         <li><a href="resources.html"><i class="fas fa-chevron-right"></i> FAQs</a></li>
                     </ul>
-                </div>
-                
-                <div class="footer-col">
-                    <h3>Contact Info</h3>
-                    <div class="contact-info">
-                        <div class="contact-item">
+                </div> -->
+                <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Phone Number</strong>
+                                <p>08000LASIMRA</p>
+                                <p>0800 527 4672</p>
+                            </div>
+                        </div>
+                <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
                             <div>
                                 <strong>Head Office</strong>
-                                <p>LASIMRA Building, Secretariat Road, Alausa, Ikeja, Lagos</p>
+                                <p>2, Yusuf Close, Off Hakeem Balogun St, Agidingbi, Ikeja</p>
                             </div>
                         </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <strong>Phone Numbers</strong>
-                                <p>+234 1 123 4567</p>
-                                <p>+234 1 123 4568</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
+                <div class="contact-item">
                             <i class="fas fa-envelope"></i>
                             <div>
                                 <strong>Email</strong>
                                 <p>info@lasimra.gov.ng</p>
                                 <p>support@lasimra.gov.ng</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-clock"></i>
-                            <div>
-                                <strong>Working Hours</strong>
-                                <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
-                            </div>
+                            </div>    
+                        
+                        
+                        
                         </div>
                     </div>
                 </div>
@@ -205,12 +227,12 @@
                 <div class="copyright">
                     <p>&copy; <span id="currentYear"></span> Lagos State Infrastructure Maintenance Regulatory Agency (LASIMRA). All rights reserved.</p>
                 </div>
-                <div class="footer-links">
+                <!-- <div class="footer-links">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms of Service</a>
                     <a href="#">Accessibility</a>
                     <a href="#">Sitemap</a>
-                </div>
+                </div> -->
             </div>
         </div>
     </footer>

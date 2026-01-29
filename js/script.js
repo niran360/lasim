@@ -165,12 +165,11 @@ function initFormValidation() {
                 // Show success message
                 showNotification('Form submitted successfully!', 'success');
                 
-                // In production, you would submit the form here
-                // form.submit();
+              
                 
                 // For demo, reset the form
                 setTimeout(() => {
-                    form.reset();
+                    form.submit();
                 }, 2000);
             } else {
                 showNotification('Please check the form for errors', 'error');
@@ -506,3 +505,32 @@ const slides = document.querySelectorAll(".slide");
     const scrollY = window.scrollY;
     hero.style.backgroundPosition = `center ${scrollY * 0.4}px`;
   });
+
+
+document
+  .getElementById("downloadBtn")
+  .addEventListener("click", downloadPDF);
+
+function downloadPDF() {
+  const pdfUrl = "/image/Schedule.pdf";
+
+  const link = document.createElement("a");
+  link.href = pdfUrl;
+  link.download = "LASIMRA-Application-Guide.pdf";
+
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+
+
+function filterPermits() {
+  const input = document.getElementById("permitSearch").value.toLowerCase();
+  const rows = document.querySelectorAll("#permitsTable tbody tr");
+
+  rows.forEach(row => {
+    const text = row.textContent.toLowerCase();
+    row.style.display = text.includes(input) ? "" : "none";
+  });
+}
+
