@@ -534,3 +534,29 @@ function filterPermits() {
   });
 }
 
+
+  const noticeKey = "lasimra-office-relocation";
+
+  window.addEventListener("load", () => {
+    if (!localStorage.getItem(noticeKey)) {
+      document.getElementById("noticeOverlay").style.display = "flex";
+    }
+  });
+
+  function closeNotice() {
+    document.getElementById("noticeOverlay").style.display = "none";
+    localStorage.setItem(noticeKey, "seen");
+  }
+
+const header = document.querySelector(".header");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 10) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  });
+
+
+
