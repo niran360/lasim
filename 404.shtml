@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Page Not Found — LASIMRA</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The page you are looking for could not be found on the LASIMRA website." />
+
+  <link rel="icon" href="/favicon.ico" />
+
+  <style>
+    :root {
+      --primary: #ff6600;
+      --bg: #f9fafb;
+      --text: #111827;
+      --muted: #6b7280;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 720px;
+      background: #fff;
+      border-radius: 16px;
+      padding: 3rem;
+      text-align: center;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(255, 102, 0, 0.12);
+      color: var(--primary);
+      font-weight: 600;
+      padding: 0.4rem 0.75rem;
+      border-radius: 999px;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 5vw, 3.5rem);
+      font-weight: 800;
+      margin-bottom: 0.75rem;
+    }
+
+    p {
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+
+    .actions {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      text-decoration: none;
+      padding: 0.75rem 1.6rem;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background: #e55a00;
+    }
+
+    .btn-outline {
+      border: 1px solid #e5e7eb;
+      color: var(--text);
+      background: #fff;
+    }
+
+    .btn-outline:hover {
+      background: #f3f4f6;
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+  <main class="container" role="main" aria-labelledby="page-title">
+    <span class="badge">404 Error</span>
+
+    <h1 id="page-title">Page Not Found</h1>
+
+    <p>
+      Sorry — the page you’re looking for doesn’t exist or may have been moved.
+    </p>
+
+    <div class="actions">
+      <a href="/" class="btn btn-primary">Go to Homepage</a>
+    </div>
+
+    <footer>
+      Lagos State Infrastructure Maintenance and Regulatory Agency (LASIMRA)
+    </footer>
+  </main>
+
+</body>
+</html>
